@@ -10,8 +10,11 @@ body{
 nav{
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    /* border-radius: 50px; */
+
+   
+ /* border-radius: 50px; */
 }
+
 nav ul{
     width: 100%;
     list-style: none;
@@ -118,7 +121,60 @@ header .logo img{
     padding-bottom: 8px; 
     width: 100%;  
 }
-.container .paragraph{
+.container .paragraph-1{
     font-family: sans-serif;
     padding-top: 20px;
 }
+.p-heading{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: green;
+}
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: popIn 0.8s ease-out forwards;
+}
+
+/* Add this class when the container is in the viewport */
+.container.visible {
+    animation: none; /* Disable the initial animation */
+    opacity: 1;
+    transform: translateY(0);
+}
+/* carousal animation */
+/* Add the following styles to your existing CSS */
+
+.carousel-item {
+    transform: scale(0.8); /* Initial scale for the pop in effect */
+    opacity: 0; /* Hide the carousel items initially */
+  
+    /* Add animation for the pop in effect */
+    animation: popIn 1s ease-in forwards;
+  }
+  
+  /* Define the pop in animation */
+  @keyframes popIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  /* footer section    */
+ 
