@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container .heading-1 h1,h3{
+    font-family: sans-serif;
+    color: green;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-bottom: 1px solid #0b0b0b; /* Long underline as a border */
+    padding-bottom: 8px; 
+    width: 100%;  
+}
+.container p{
+    font-family: sans-serif;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
