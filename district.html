@@ -6,60 +6,258 @@
     <title>Things To Do</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./hotspot.css">
+    <link rel="stylesheet" href="./district.css">
 </head>
 <body>
-        <!------------------- header starts ---------------->
-
-        <header>
-            <nav class="sidebar">
-                <ul>
-                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="./hotspot.html">Tourist Hotspot</a></li>
-                    <li><a href="./district.html">Things To Do</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <header>
-            <nav class="sticky">
-            <div class="logo">
-                <a href="index.html">
-                <img src="./images/logo/pngwing.com.png" alt="kerala tourism logo">
-            </a>
-            </div>
-                <ul>
-                    <li class="hideOnMobile"><a href="index.html">About</a></li>
-                    <li class="hideOnMobile"><a href="./hotspot.html">Tourist Hotspot</a></li>
-                    <li class="hideOnMobile"><a href="./district.html">Things To Do</a></li>
-                    <li class="hideOnMobile"><a href="#">Contact</a></li>
-                    <li class="hideOnMobile"><a href="#">Login</a></li>
-                    <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-            </nav>
-        </header>
-                            <!----------- header ends ---------------->
-        
-        
-        
-        
-        
-           <script src="./js/bootstrap.js"></script>
-           <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-            <script>
-                function showSidebar() {
-                    const sidebar = document.querySelector('.sidebar');
-                    sidebar.style.display = 'flex';
-                }
-                function hideSidebar(){
-                    const sidebar = document.querySelector('.sidebar');
-                    sidebar.style.display = 'none';
-                }
-                
-            </script>
-            <!------------------ navbar ends ---------------->
+    <header>
+        <nav class="sidebar">
+            <ul>
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="./hotspot.html">Tourist Hotspot</a></li>
+                <li><a href="./district.html">Things To Do</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <header>
+        <nav class="sticky">
+        <div class="logo">
+            <a href="index.html">
+            <img src="./images/logo/pngwing.com.png" alt="kerala tourism logo">
+        </a>
+        </div>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">About</a></li>
+                <li class="hideOnMobile"><a href="./hotspot.html">Tourist Hotspot</a></li>
+                <li class="hideOnMobile"><a href="./district.html">Things To Do</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="#">Login</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+                        <!----------- header ends ---------------->
+    
+    
+    
+    
+    
+       <script src="./js/bootstrap.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+            
+        </script>
+        <!------------------ navbar ends ---------------->
+        <section class="heading">
+            <div class="container">
+                <h2 class="text-capitalize fs-1">explore</h2>
+                <span>kerala</span>
+                <div class="heading-1 text-capitalize mt-5"><h3>thiruvananthapuram</h3>
+                </div> 
+            </div>
+        </section>
+
+            <!-- carousal starts -->
+            <section class="carousal">
+                <div class="container d-flex column-gap-3">
+                    <div class="col-6">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./images/thiruvananthapuram/thiruvananthapuram-4fcd3fcde44d78692f22eca1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/thiruvananthapuram/thiruvananthapuram-india-shutterstock_498424870_54ec620099.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/thiruvananthapuram/thiruvananthapuram-zoo.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="col-6 object-fit-contain">
+                        <p class="pt-0">Trivandrum, officially known as Thiruvananthapuram, is the capital city of the Indian state of Kerala. Nestled on the southwestern coast of the country, this vibrant city is renowned for its rich cultural heritage, historical significance, and picturesque landscapes. As the political, academic, and administrative hub of Kerala, Trivandrum boasts a unique blend of tradition and modernity.
+
+                            The city is home to several architectural marvels, including the iconic Sree Padmanabhaswamy Temple, a revered Hindu shrine known for its intricate Dravidian architecture. The Napier Museum, built in the 19th century, showcases a remarkable collection of artifacts, sculptures, and paintings, providing visitors with a glimpse into Kerala's artistic heritage. Trivandrum's colonial past is evident in structures like the British-era Kuthira Malika (Puthen Malika) Palace, adorned with exquisite wood carvings and Belgian glass windows.
+                            
+                            Apart from its historical charm, Trivandrum is surrounded by natural beauty. The city is situated along the Arabian Sea, offering stunning beaches such as Kovalam and Shanghumugham, where visitors can unwind and enjoy breathtaking sunsets. The lush greenery of the Western Ghats envelopes the city, providing opportunities for nature enthusiasts to explore nearby hill stations like Ponmudi and Neyyar Dam.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- card section starts -->
+            <section class="card-section">
+                <div class="container ">
+                   <h4 class="text-capitalize ">things to do</h4>
+                   <div class="card-s ">
+                    <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                        <div class="col">
+                          <div class="card">
+                            <img src="./images/thiruvananthapuram/kovalam beach.jpg" class="card-img-top" alt="kovalam beach">
+                            <div class="card-body">
+                              <h5 class="card-title">kovalam beach</h5>
+                              <p class="card-text">When it comes to beaches in Kerala, Kovalam beach doubtlessly seizes one the topmost positions in regard of visual awesomeness and tourist inflow. This beach is situated 13km away from Trivandrum. Among the vast array of tourist spots in Kovalam, it's the beaches that are most sought by the tourists, both local and foreign.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="./images/thiruvananthapuram/temple.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Padmanabhaswamy Temple</h5>
+                              <p class="card-text">The Padmanabhaswamy Temple is a Hindu temple, dedicated to Vishnu, in Thiruvananthapuram, the capital of the state of Kerala, India. It is one of the 108 Divya Desams, the sacred abodes of Vishnu in the Sri Vaishnava tradition. It is widely considered as the world's richest Hindu temple.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="./images/thiruvananthapuram/veli lake.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">veli Lake</h5>
+                              <p class="card-text">The Veli Tourist Village which lies where the Veli Lake meets the Arabian Sea provides for unique boating and picnicking opportunities. Visitors can hire pedal boats or paddleboats as per their convenience. One can also roam the gardens and have a nice picnic or choose to employ the boats for the entire duration of the trip.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="./images/thiruvananthapuram/kanakakunnu palace.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">kanakakunnu palace</h5>
+                              <p class="card-text">the Kanakakkunnu Palace in Thiruvananthapuram. Located at the heart of the city, it plays a welcoming host to a multitude of cultural events, seminars and programmes. Its proximity to a number of important tourist sites, including the Napier Museum and Trivandrum Zoo, has made it an important part of the daily workings of the city. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                   
+                </div>
+            </section>
+
+            <!-- kollam section starts -->
+            <section>
+            <div class="container">
+            <div class="heading-1 text-capitalize mt-5"><h3>kollam</h3>
+            </div> 
+        </div>
+        </div>
+    </section>
+
+       <!-- carousal section starts -->
+<section class="carousal">
+    <div class="container d-flex column-gap-3">
+        <div class="col-6">
+            <div id="carouselExampleFadeKollam" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/kollam/jatayupara.jpg" class="d-block w-100" alt="jatayu para">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/kollam/kollam light house.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/kollam/Kollam_Beach_1715.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeKollam" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeKollam" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-6 object-fit-contain">
+            <p class="pt-40">Kollam, situated on the scenic Malabar Coast of Kerala, India, is a city rich in cultural heritage and natural beauty. Known for its historical significance as an ancient trading port, Kollam has played a pivotal role in the maritime history of the region. The city boasts a unique blend of traditional charm and modern developments. One of the prominent attractions is the Ashtamudi Lake, a picturesque backwater stretch that enchants visitors with its serene beauty. The historic Thangassery Lighthouse stands tall as a symbol of Kollam's maritime legacy, offering panoramic views of the Arabian Sea. Kollam is also home to the renowned Jatayu Earth's's Adventure Park, featuring the world's largest bird sculpture and providing a thrilling blend of nature and adventure. The city is adorned with ancient temples, churches, and mosques, reflecting its cultural diversity. Visitors to Kollam can explore the vibrant markets, savor traditional Kerala cuisine, and experience the warmth of the local hospitality. Whether navigating the tranquil backwaters or immersing oneself in the rich cultural tapestry, Kollam invites travelers to discover the unique allure of this coastal gem in "God's Own Country." </p>
+            </div>
+    </div>
+</section>
+<!-- carousal section ends -->
+
+                <!-- card section starts -->
+                <section class="card-section">
+                    <div class="container">
+                       <h4 class="text-capitalize">things to do</h4>
+                       <div class="card-s ">
+                        <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                            <div class="col">
+                              <div class="card">
+                                <img src="./images/kollam/palaruvi water falls.jpg" class="card-img-top" alt="kovalam beach">
+                                <div class="card-body">
+                                  <h5 class="card-title">Palaruvi falls</h5>
+                                  <p class="card-text">Palaruvi Falls is a waterfall located in Kollam district in the Indian state of Kerala. It is the 32nd highest waterfall in India. Palaruvi falls from a height of 300 feet and is situated at Aryankavu in the Kollam district of the south Indian state of Kerala</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="./images/kollam/jatayupara.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">jatayu Earth center</h5>
+                                  <p class="card-text">Jatayu Earth Center, also known as Jatayu Nature Park or Jatayu Rock, is a park and tourism centre at Chadayamangalam in Kollam district of Kerala, India. It stands at an altitude of 350m above the mean sea level.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="./images/kollam/kumbhavurutty falls.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Kumbhavurutty Waterfall</h5>
+                                  <p class="card-text">Kumbhavurutty Waterfall is a famous waterfalls in South India situated near Aryankavu panchayath in Kollam district of Kerala near Tamil Nadu border. Located on the eastern area of Kollam District, Kumbhavurutty falls is one among the few crowd pulling waterfalls in Kerala.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="./images/kollam/adventure park.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Asramam Adventure Park</h5>
+                                  <p class="card-text">Asramam Adventure Park is an urban park in the core Kollam city of Kerala state. It was opened after 1980, on 48 acres of city-owned land. Located beside the Kerala's pride, backwaters of Ashtamudi, this place popularly known as Asramam Picnic Village. It is the main centre of recreational activities in Kollam city. </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                       
+                    </div>
+                </section>
+
+                        <!-- card section ends -->
+                        <!-- kollam section ends -->
+
+                        <!-- pathanamthitta section starts -->
+
+                        <section>
+                            <div class="container">
+                            <div class="heading-1 text-capitalize mt-5"><h3>pathanamthitta</h3>
+                            </div> 
+                        </div>
+                        </div>
+                    </section>
+
+
+
+
 </body>
 </html>

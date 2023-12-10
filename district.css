@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+   font-family: sans-serif;
+}
+.card-section h4{
+    color: green;
+    font-weight: bold;
+    padding-top: 20px;
+    border-bottom: 1px solid #0b0b0b; /* Long underline as a border */
+    padding-bottom: 8px; 
+    width: fit-content;
+}
+.card-s img{
+    height: 200px;
+    object-fit: cover;
+}
+.card-s .card-title{
+    color: green;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.card-s .card{
+    height: 100%;
+}
