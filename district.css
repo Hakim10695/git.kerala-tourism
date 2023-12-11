@@ -27,3 +27,25 @@
 .card-s .card{
     height: 100%;
 }
+.paragraph p{
+  padding-top: 50px;
+  font-family: sans-serif;
+}
+.paragraph-Al{
+    padding-top: 75px;
+}
+.paragraph-ko{
+    padding-top: 20px;
+}
+.paragraph-th{
+    padding-top: 20px;
+}
+.paragraph-wa{
+    padding-top: 55px;
+}
+
+
+
+
+
+
