@@ -106,6 +106,7 @@ h2:after{
     border: none;
     color: #fff;
     transition: .3s;
+    border-radius: 50px;
 }
 .btn:hover{
     background-color: #27ae60;
